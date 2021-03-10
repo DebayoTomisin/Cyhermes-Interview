@@ -6,16 +6,20 @@ import { Sidebar } from "../components/Sidebar"
 import { MainContent } from "../components/MainContent"
 
 
-const { Header, Content } = Layout
+const { Header } = Layout
 
 const Home = () => {
   return(
     <>
-      <main className="home">
-        <Sidebar/>
-        <Header style={{padding: 0, background: "#fafafa"}}/>
-        <MainContent/>
-      </main>
+      <section className="home">
+        <Layout>
+          <Sidebar/>
+          <Layout>
+            <Header style={{padding: 0, marginBottom: "-30px", background: "#fafafa"}}/>
+            <MainContent/>
+          </Layout>        
+        </Layout>
+      </section>
     </>
   )
 }

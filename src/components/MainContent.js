@@ -10,15 +10,14 @@ import { Modules } from "./Modules"
 export const MainContent = () => 
 {
   return(
-    <>
-      <main className="main">
-        <Layout style={{background: "#fafafa"}}>
-          <Header/>
-          <Packages/>
-          <Slides/>
-          <Modules/>
-        </Layout>
-      </main>
-    </>
+    <main className="main">
+      <Layout style={{background: "#fafafa"}}>
+        <Header/>
+        <Packages/>
+        <Slides/>
+        <Modules/>
+      </Layout>
+    </main>
+  
   )
 }
