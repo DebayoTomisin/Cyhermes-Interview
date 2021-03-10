@@ -1,24 +1,26 @@
 import React from "react"
 import { CheckOutlined } from "@ant-design/icons"
-import { CheckCircleTwoTone } from '@ant-design/icons'
+
 
 export const Packages = () => 
 {
   return(
-   <section className="plan">
-     <p className="plan-select-text">
+   <section className="package">
+     <p className="text">
        Select your preferred package below
      </p>
-     <div className="plan-container">
+     <div className="pkg-container">
 
-        <div className="plan-premium">
+        <div className="pkg-premium">
 
-          <h6 className="plan-premium-start-from">Starts From</h6>
-          <h6 className="plan-premium-currency">NGN</h6>
-          <h4 className="plan-premium-balance">5,999,999.99</h4>
-          <h6 className="plan-premium-annum">per annum</h6>
-          <h3 className="plan-premium-title">Premium</h3>
-          <p className="plan-premium-users">
+          <h6 style={{color: "#ffca00", fontWeight: 700, fontSize: "1.3rem"}}>Starts From</h6>
+          <h6 style={{fontWeight: 700, fontSize: "1rem", lineHeight: "3px", color: "#908f90"}}>NGN</h6>
+          <h4 style ={{ fontWeight: 700, color: "#222021", fontSize: "1.5rem"}}
+          >5,999,999.99</h4>
+          <h6 style={{fontWeight: 700, fontSize: "1rem", lineHeight: "3px", color: "#908f90"}}>per annum</h6>
+
+          <h3 style={{ marginTop: "3.5rem", fontWeight: 700,color: "#222021"}}>Premium</h3>
+          <p className="premium-users">
             100 users
             <span>.</span>
             All Modules
