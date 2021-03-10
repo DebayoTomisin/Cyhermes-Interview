@@ -9,7 +9,7 @@ const { Sider } = Layout;
 
 export const Sidebar = () => {
   return(
-    <Sider width= "30vw" style ={{minHeight:"100vh", padding: "50px 0"}} breakpoint="md">
+    <Sider width= "23vw" style ={{minHeight:"100vh", padding: "50px 0"}} breakpoint="md">
       <Menu
         mode="inline"
         defaultSelectedKeys={['1']}
