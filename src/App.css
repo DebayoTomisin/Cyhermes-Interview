@@ -1,38 +1,401 @@
-.App {
-  text-align: center;
+.main .ant-layout {
+  padding: 0 9rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sidebar component css */
+.ant-layout-sider {
+  background: #222021;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-layout-sider-main {
+  margin-bottom: 10rem;
+  padding-left: 5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.ant-layout-sider-main img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+.ant-menu {
+  border: none;
+}
+.ant-menu-item-selected {
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+.ant-menu-item-selected::after {
+  left: 0;
+  width: 2rem;
+  color: "inherit";
+  border-left: 3.5px solid #ffd533;
+  border-right: none !important;
+}
+.ant-menu-item {
+  color: #b5b4b5;
+  font-size: 1.6rem;
+  padding: 0 50px !important;
+  margin: 0 !important;
+  display: flex !important;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.ant-menu-item:last-child {
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-menu hr {
+  width: 4.5rem;
+  display: inline-block;
+  margin-left: 5.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 2px dashed #ffca00;
+}
+.ant-layout-sider-children .quote {
+  margin-left: 3rem;
+  margin-top: 22rem;
+  width: 29rem;
+  opacity: 0.5;
+}
+.ant-layout-sider-children .quote blockquote {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #cecece;
+  padding: 20px 30px;
+  border-radius: 8px;
+  z-index: 1;
+  height: 13rem;
+  display: flex;
+  align-items: center;
+}
+.ant-layout-sider-children .quote img {
+  position: absolute;
+  left: -3rem;
+  width: 7rem;
+  height: 8rem;
+  object-fit: contain;
+}
+.ant-layout-sider-children .quote p {
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding-left: 20px;
+}
+.ant-layout-sider-children .quote strong {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Header component css */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.header h4 {
+  font-weight: 600;
+}
+.info h4 {
+  color: #908f90;
+}
+.info h2 {
+  line-height: 2.2rem;
+  font-weight: 800;
+  color: #222021;
+}
+.info em {
+  color: #ffca00;
+}
+.balance {
+  justify-self: end;
+}
+.balance h5 {
+  color: #7ca5ff;
+}
+.balance h2 {
+  font-weight: 800;
+  color: #4982ff;
+  line-height: 5px;
+}
+.balance p {
+  color: #908f90;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.balance p span {
+  font-size: 1rem;
+}
+
+/* Package component css */
+.package {
+  position: relative;
+}
+.pkg-container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.8rem;
+}
+.text {
+  margin-top: -1.4rem;
+  color: #908f90;
+  font-size: 1.2rem;
+}
+.pkg-premium {
+  margin: auto 0 0  auto ;
+  padding: 3rem 2.5rem 0 2.5rem;
+  position: relative;
+  width: 20vw;
+  height: 30vh;
+  box-shadow: 0 3rem 5rem #d7e4ff;
+}
+
+.plan-premium-start-from, .plan-premium-users {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.pkg-premium p {
+  color: #908f90;
+}
+
+.premium-users {
+  font-size: 1.1rem;
+  margin-top: -25px;
+}
+.premium-users span {
+  display: inline-block;
+  padding: 0 5px;
+  color: #ffca00;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.pkg-basic {
+  position: relative;
+  width: 20vw;
+  height: 40vh;
+  padding: 4rem 2.5rem 1rem 2.5rem;
+  background: #f6f9ff;
+  box-shadow: 1px 4px 9px 0.4px gainsboro;
+  border: 1px solid #4982ff;
+  border-radius: 5px;
+}
+.checkoutlined {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: #94e1b3;
+  
+}
+.pkg-title {
+  font-weight: 700;
+  color: #4982ff;
+}
+.pkg-basic h6,
+.pkg-basic h5,
+.pkg-basic p {
+  color: #908f90;
+}
+.pkg-basic h6 {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.pkg-basic h5 {
+  margin-top: 3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.pkg-basic h5 span {
+  display: block;
+  width: 6rem;
+}
+.pkg-basic h5 hr {
+  display: block;
+  width: calc(100% - 6rem);
+  border: 2px dotted #a4c1ff;
+}
+.pkg-basic p {
+  font-weight: 500;
+  line-height: 12px;
+}
+
+/* Slider component */
+
+.addusers {
+  margin-top: 1rem;
+}
+.addusers-header h4,
+.addusers-header p {
+  color: #777577;
+}
+.slider {
+  margin-top: -2rem;;
+  position: relative;
+}
+.slider-header {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.slider-header .min,
+.slider-header .max {
+  color: #222021;
+  font-weight: 600;
+}
+
+.ant-tooltip-arrow {
+  display: none !important;
+}
+.ant-tooltip-inner {
+  background-color: transparent !important;
+  color: #4982ff !important;
+  font-weight: bold;
+  box-shadow: none !important;
+}
+.ant-tooltip-content {
+  position: relative;
+  top: 10px !important;
+}
+
+/* modules component */
+.modules {
+  margin-top: 1.7rem;
+}
+.modules-head {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.modules-head hr:first-child {
+  width: 1.4rem;
+  border: 1px solid #b5b4b5;
+}
+.modules-head h3 {
+  width: 120px;
+  color: #908f90;
+}
+.modules-head hr:last-child {
+  width: calc(100% - 14rem);
+  border: 1px solid #b5b4b5;
+}
+.modules-content {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.active {
+  background: #ffeef1;
+  align-items: center !important;
+}
+.active p {
+  color: #222021 !important;
+}
+.priority {
+  text-align: right;
+  width: calc(100% - 7rem);
+  color: #ffca00;
+  font-size: 4rem;
+}
+.modules-item {
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 1rem;
+}
+.modules-item img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+.modules-item p {
+  color: #908f90;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+.modules-item p span {
+  display: block;
+  line-height: 15px;
+}
+
+
+.btn {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.btn hr {
+  border: 1px dashed #4982ff;
+}
+.btn-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn button {
+  width: 120px;
+  padding: 9px 10px;
+  font-weight: 700;
+}
+.btn button:disabled {
+  background-color: transparent;
+  color: orangered;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding-left: 0;
+  opacity: 0.5;
+}
+.btn-continue {
+  background: #ffca00;
+  border: 1px solid #ffca00;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.btn-continue:hover {
+  background: #e6b600;
+  transition: all 0.3s;
+}
+
+.ant-layout-header {
+  background: transparent;
+}
+.ant-layout-header svg {
+  fill: #4982ff;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 900px) {
+  .modules-footer {
+    padding: 5px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    justify-content: space-between;
   }
 }
+
+@media (max-width: 600px) {
+  .main .ant-layout {
+    padding: 0 3rem;
+  }
+  .header {
+    grid-template-columns: 1fr;
+  }
+  .balance {
+    justify-self: start;
+    margin-bottom: 10px;
+  }
+  .pkg-container {
+    grid-template-columns: 1fr;
+  }
+}
+
