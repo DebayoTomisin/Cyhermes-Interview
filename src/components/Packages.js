@@ -27,15 +27,16 @@ export const Packages = () =>
           </p>
         </div>
 
-        <div className="plan-basic">
-          <CheckOutlined style={{ color: "#fafafa"}} className="plan-basic-selected"/>
-          <h3 className="plan-basic-title">Basic</h3>
+        <div className="pkg-basic">
+          <CheckOutlined style={{ color: "#fafafa"}} className="checkoutlined"/>
+          <h3 className="pkg-title">Basic</h3>
           <h6>
             <b>30 days trails</b> on our premium app features and
             features
           </h6>
           <h5>
             <span>INCLUDES</span>
+            <hr/>
           </h5>
           <p> - 25 Users </p>
           <p> - All modules & features </p>
