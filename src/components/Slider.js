@@ -25,6 +25,7 @@ export const Slides = () => {
             padding: "1rem 0",
             marginLeft: 0,
             marginRight: 0,
+            color:"#052261"
           }} 
         />
       </div>

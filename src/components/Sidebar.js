@@ -1,7 +1,7 @@
 import React from "react"
 import { Layout, Menu } from "antd"
-import Logo from '../assets/images/logo.png';
-import Quote from '../assets/images/quote.png';
+import Logo from './images/logo.png';
+import Quote from './images/quote.png';
 import { ArrowRightOutlined } from '@ant-design/icons'
 
 const { Sider } = Layout;
