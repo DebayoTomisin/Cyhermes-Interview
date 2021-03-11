@@ -1,7 +1,7 @@
-This is the read me for the application to cyhermes interview question.
-To build this application, I'll be making use of react and whatever technologies that come up in the process of development.
+This is the README for the application to cyhermes interview question. The followind was used in developing the application:
 
-React
-React-router-dom
-CSS (wanted to use SASS but I didn't)
-Ant design (first time, would have used material ui but let's explore something new)
+1. React
+2. React-router-dom
+3. CSS
+4. Ant design (first time, would have used material ui but let's explore something new)
+
