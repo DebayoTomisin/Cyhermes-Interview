@@ -1,14 +1,15 @@
 import React from "react"
 import { ExclamationCircleOutlined } from "@ant-design/icons"
 
-import Governance from '../assets/images/icons/governance-portal.png';
-import Corporate from '../assets/images/icons/corporate-universe.png';
-import Contract from '../assets/images/icons/contract-domain.png';
-import Investor from '../assets/images/icons/investor-relations.png';
-import Dispute from '../assets/images/icons/dispute-portfolio.png';
-import Minute from '../assets/images/icons/minute-book.png';
-import Report from '../assets/images/icons/reporting-tool.png';
-import Attendance from '../assets/images/icons/attendance-register.png';
+import Govt from './images/icons/governance-portal.png';
+import Corporate from './images/icons/corporate-universe.png';
+import Contract from './images/icons/contract-domain.png';
+import Investor from './images/icons/investor-relations.png';
+import Dispute from './images/icons/dispute-portfolio.png';
+import Minute from './images/icons/minute-book.png';
+import Report from './images/icons/reporting-tool.png';
+import Attendance from './images/icons/attendance-register.png';
+
 
 
 export const Modules = () =>
@@ -23,7 +24,7 @@ export const Modules = () =>
       </div>
       <div className="modules-content">
         <div className="modules-item active">
-          <img src={Governance} alt="Governance Portal" />
+          <img src={Govt} alt="Governance Portal" />
           <p>
             Governance <span>Portal</span>
           </p>
