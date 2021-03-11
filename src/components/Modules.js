@@ -11,10 +11,9 @@ import Report from '../assets/images/icons/reporting-tool.png';
 import Attendance from '../assets/images/icons/attendance-register.png';
 
 
-export const Modules = (props) =>
+export const Modules = () =>
 {
-  const {images, title} = props;
-  //const titleSplit = title.split(" ")
+  
   return(
     <section className="modules">
       <div className="modules-head">
