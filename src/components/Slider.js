@@ -11,21 +11,21 @@ export const Slides = () => {
         </p>
       </div>
 
-      <div className="addusers-slider">
-        <div className="addusers-slider-header">
+      <div className="slider">
+        <div className="slider-header">
           <p className="min">0</p>
           <p className="max"> &gt;1000 </p>
         </div>
         <Slider
           defaultValue={100}
           tooltipVisible={true}
-          style={{
-            padding: 0,
-            marginLeft: 0,
-            marginRight: 0,
-          }}
           min={0}
           max={1000}
+          style={{
+            padding: "1rem 0",
+            marginLeft: 0,
+            marginRight: 0,
+          }} 
         />
       </div>
     </section>
